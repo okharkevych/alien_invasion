@@ -14,14 +14,18 @@ class AlienInvasion:
         pygame.init()
         self.settings = Settings()
 
-        # self.screen: pygame.Surface = pygame.display.set_mode(
-        #     size=(self.settings.screen_width, self.settings.screen_height)
-        # )
+        # Launch the game in windowed mode
         self.screen: pygame.Surface = pygame.display.set_mode(
-            size=(0, 0), flags=pygame.FULLSCREEN
+            size=(self.settings.screen_width, self.settings.screen_height)
         )
-        self.settings.screen_width = self.screen.get_rect().width
-        self.settings.screen_height = self.screen.get_rect().height
+
+        # Launch the game in fullscreen mode
+        # self.screen: pygame.Surface = pygame.display.set_mode(
+        #     size=(0, 0), flags=pygame.FULLSCREEN
+        # )
+        # self.settings.screen_width = self.screen.get_rect().width
+        # self.settings.screen_height = self.screen.get_rect().height
+
         pygame.display.set_caption(title='Alien Invasion')
 
         self.ship = Ship(ai_game=self)

@@ -12,8 +12,8 @@ class Settings:
         self.ship_speed: float = 1.5
 
         # Bullet settings
-        self.bullet_speed: float = 1.0
-        self.bullet_width: int = 3
+        self.bullet_speed: float = 1.5
+        self.bullet_width: int = 3000
         self.bullet_height: int = 15
         self.bullet_color: tuple[int, int, int] = (60, 60, 60)
         self.bullets_allowed: int = 3

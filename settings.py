@@ -20,10 +20,6 @@ class Settings:
         # Alien settings
         self.fleet_drop_speed: int = 10
 
-        # Difficulty modifiers
-        self.medium_difficulty = 1.5
-        self.hard_difficulty = 2.0
-
         # How quickly should the game speed up
         self.speedup_scale = 1.1
         self.initialize_dynamic_settings()

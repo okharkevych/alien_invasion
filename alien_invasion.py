@@ -89,6 +89,12 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
 
+        # Check if some bullet collided with an alien
+        # If so, remove the bullet and the alien
+        collisions = pygame.sprite.groupcollide(
+            groupa=self.bullets, groupb=self.aliens, dokilla=True, dokillb=True
+        )
+
     def _update_aliens(self):
         """
         Check if the fleet is on the screen's edge,

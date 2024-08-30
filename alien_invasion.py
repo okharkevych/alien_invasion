@@ -43,7 +43,7 @@ class AlienInvasion:
         self._create_fleet()
 
         # Create Play button
-        self.play_button = Button(self, 'Play')
+        self.play_button = Button(self, msg='Play')
 
     def run_game(self) -> None:
         """Begin the game main cycle"""
@@ -95,15 +95,15 @@ class AlienInvasion:
 
     def _check_keydown_events(self, event: pygame.KEYDOWN):
         """React to key presses"""
-        if event.key == pygame.K_RIGHT:
+        if event.key == pygame.K_RIGHT and self.stats.game_active:
             self.ship.moving_right = True
-        elif event.key == pygame.K_LEFT:
+        elif event.key == pygame.K_LEFT and self.stats.game_active:
             self.ship.moving_left = True
         elif event.key == pygame.K_q:
             sys.exit()
         elif event.key == pygame.K_p and not self.stats.game_active:
             self._start_game()
-        elif event.key == pygame.K_SPACE:
+        elif event.key == pygame.K_SPACE and self.stats.game_active:
             self._fire_bullet()
 
     def _check_keyup_events(self, event: pygame.KEYUP):

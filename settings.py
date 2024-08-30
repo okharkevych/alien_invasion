@@ -17,3 +17,9 @@ class Settings:
         self.bullet_height: int = 15
         self.bullet_color: tuple[int, int, int] = (60, 60, 60)
         self.bullets_allowed: int = 3
+
+        # Alien settings
+        self.alien_speed: float = 1.0
+        self.fleet_drop_speed: int = 10
+        # fleet_direction 1 means moving to the right; -1 -- to the left
+        self.fleet_direction = 1

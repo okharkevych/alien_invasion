@@ -63,6 +63,8 @@ To install Pygame, enter the following command in terminal:
 >>> python3 -m pip install --user pygame
 ```
 OR (if using pipenv virtual environment)
+- Open alien_invasion directory downloaded earlier in terminal
+- Enter the following commands:
 ```
 >>> pipenv shell
 >>> pipenv install pygame

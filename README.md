@@ -10,8 +10,8 @@ appears that moves faster than the previous fleet. If any alien hits
 the player’s ship or reaches the bottom of the screen, the player
 loses a ship. If the player loses three ships, the game ends.
 
-<div style="text-align: center; margin: auto;"> 
-  <img src="images/game_sample.png"  style="width: 80%;">
+<div align=center margin=auto> 
+  <img src="images/game_sample.png" width=80%>
 </div>
 
 
